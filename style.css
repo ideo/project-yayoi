@@ -142,6 +142,6 @@ button.submit-btn, button.see-tips-btn, button.do-next-btn {
   border: 4px solid black;
 }
 
-.range-container {
+.range-container, .submit-container {
   border-top-width: 4px;
 }
