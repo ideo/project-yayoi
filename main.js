@@ -44,11 +44,11 @@ $(document).ready(function() {
 
     avg = Math.floor(total / (Object.keys(survey).length - 1))
 
-    let resultPage = avg >= 50 ? '/results-help.html' : '/results-tips.html';
+    let resultPage = avg >= 50 ? 'results-help' : 'results-tips';
 
     alert(`* Debugging info: * \nThe average value for the sliders are: ${avg} \nand the chosen age range is ${survey.age} \nBased on this average, you will see the following results page: ${resultPage}`);
 
-    window.location = resultPage
+    window.location = window.location.pathname.replace('isthisathing', resultPage)
 
   })
 
