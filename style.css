@@ -29,17 +29,20 @@ input[type=range] {
   margin: 18px 0;
   width: 100%;
 }
+
 input[type=range]:focus {
   outline: none;
 }
+
 input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
   height: 22px;
   cursor: pointer;
-  background:linear-gradient(90deg, #80B1FE 0%, #FFB69F 100%);
+  background: linear-gradient(90deg, #80B1FE 0%, #FFB69F 100%);
   border-radius: 15px;
   border: 5px solid #010101;
 }
+
 input[type=range]::-webkit-slider-thumb {
   border: 5px solid #000000;
   height: 36px;
@@ -50,17 +53,20 @@ input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   margin-top: -14px;
 }
+
 input[type=range]:focus::-webkit-slider-runnable-track {
   /* background: #367ebd; */
 }
+
 input[type=range]::-moz-range-track {
   width: 100%;
   height: 17px;
   cursor: pointer;
-  background:linear-gradient(90deg, #80B1FE 0%, #FFB69F 100%);
+  background: linear-gradient(90deg, #80B1FE 0%, #FFB69F 100%);
   border-radius: 15px;
   border: 5px solid #010101;
 }
+
 input[type=range]::-moz-range-thumb {
   border: 5px solid #000000;
   height: 30px;
@@ -69,6 +75,7 @@ input[type=range]::-moz-range-thumb {
   background: #FFD77F;
   cursor: pointer;
 }
+
 input[type=range]::-ms-track {
   width: 100%;
   height: 17px;
@@ -80,16 +87,19 @@ input[type=range]::-ms-track {
   border-width: 16px 0;
   color: transparent;
 }
+
 input[type=range]::-ms-fill-lower {
   background: linear-gradient(90deg, #80B1FE 0%, #FFB69F 100%);
   border: 5px solid #010101;
   border-radius: 2.6px;
 }
+
 input[type=range]::-ms-fill-upper {
   background: linear-gradient(90deg, #80B1FE 0%, #FFB69F 100%);
   border: 5px solid #010101;
   border-radius: 2.6px;
 }
+
 input[type=range]::-ms-thumb {
   border: 5px solid #000000;
   height: 30px;
@@ -98,13 +108,40 @@ input[type=range]::-ms-thumb {
   background: #FFD77F;
   cursor: pointer;
 }
+
 input[type=range]:focus::-ms-fill-lower {
   background: #3071a9;
 }
+
 input[type=range]:focus::-ms-fill-upper {
   background: #367ebd;
 }
 
 input {
   background: transparent;
+}
+
+button.age {
+  cursor: pointer;
+}
+
+button.age.selected {
+  background: black;
+  color: white;
+}
+
+button.submit-btn, button.see-tips-btn, button.do-next-btn {
+  -webkit-box-shadow: 0px 31px 31px 0px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0px 31px 31px 0px rgba(0, 0, 0, 0.18);
+  box-shadow: 0px 31px 31px 0px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+}
+
+.results-container {
+  border-radius: 2em;
+  border: 4px solid black;
+}
+
+.range-container {
+  border-top-width: 4px;
 }
