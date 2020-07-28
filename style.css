@@ -34,7 +34,7 @@ input[type=range]:focus {
 }
 input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
-  height: 17px;
+  height: 22px;
   cursor: pointer;
   background:linear-gradient(90deg, #80B1FE 0%, #FFB69F 100%);
   border-radius: 15px;
@@ -42,8 +42,8 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 input[type=range]::-webkit-slider-thumb {
   border: 5px solid #000000;
-  height: 30px;
-  width: 30px;
+  height: 36px;
+  width: 36px;
   border-radius: 50%;
   background: #FFD77F;
   cursor: pointer;
@@ -73,6 +73,8 @@ input[type=range]::-ms-track {
   width: 100%;
   height: 17px;
   cursor: pointer;
+  -ms-border-radius: 15px;
+  border-radius: 15px;
   background: transparent;
   border-color: transparent;
   border-width: 16px 0;
